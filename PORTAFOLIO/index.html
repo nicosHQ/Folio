@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Nicolas Tapia</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">nicos</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">CONOCIMIENTOS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">EXPERIENCIA</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <div id="particles-js"></div>
+    <section id="inicio" class="inicio">
+        
+        <div class="contenido-banner">
+            <div class="bg-dark">
+                <h1>Nicolas Lenin Tapia</h1>
+                <h2><span id="typed" class="ddw"></span></h2>
+                <p>Hola, soy <span>Nicolas Tapia.</span> apasionado por diseñar o desarrollar aplicaciones y páginas web, buscando siempre aprender y crear soluciones tanto para pequeñas como para grandes empresas.</p>
+
+                <div class="redes">
+                    <a href="https://www.behance.net/nicolastapian1" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                    <a href="https://twitter.com/nnnnicosHQ" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/nicosHQ" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/nicolas-tapian/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://bento.me/nicoshq" target="_blank"><i class="fa-solid fa-rss"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- SECCION PORTAFOLIO -->
+        <section id="portfolio" class="portfolio">
+            <div class="contenido-seccion">
+                <h2>PORTAFOLIO</h2>
+                <div class="galeria">
+                    <div class="proyecto" id="open">
+                        <img src="img/Fundacion.png" alt="">
+                        <div class="overlay">
+                            <h3>Luchadores de Colores</h3>
+                            <p>Research UX, Diseño UI y desarrollo web</p>
+                        </div>
+                    </div>
+                    <div class="proyecto" id="open2">
+                        <img src="img/FireShot Capture 002 - Home - avenue-fashion.vercel.app.png" alt="">
+                        <div class="overlay">
+                            <h3>Avenue Fashion Moda</h3>
+                            <p>Desarrollo web</p>
+                        </div>
+                    </div>
+                    <div class="proyecto" id="open3">
+                        <img src="img/Sin título.png" alt="">
+                        <div class="overlay">
+                            <h3>Feria de productos organicos</h3>
+                            <p>Research UX y Diseño UI</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+<!-- MODALS 1 -->
+        <div class="modal-container" id="modal_container">
+            <div class="modal">
+                    <h1>Luchadores de Colores</h1> 
+                    <h1>Research,Diseño y Desarrollo web</h1>
+                    <p>Luchadores de colores es una Fundacion ubicada en Santiago de Chile, la cual se enfoca en la ayuda en pacientes oncologicos infantiles. Como agencia de diseño y desarrollo se contacto con esta fundacion para ofrecer nuestros servicios gratuitos de diseño y desarrollo donde se llevo acabo una metodologia ACBD junto con Research de usuarios y arquitectura de informacion, para mejorar el diseño enfocado al usuario. </p>
+                    <a href="https://github.com/nicosHQ" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.behance.net/gallery/185425653/Proyecto-web-Fundacion-Luchadores-de-Colores" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                    <a href="https://xd.adobe.com/view/2c4864d8-f27e-4b01-8c7c-b2acdf5bb02f-791b/" target="_blank"><i class="fa-solid fa-rss"></i></a>
+
+                    <!-- Slider main container -->
+                    <div class="swiper swiper-colores">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/Donaciones - Nicos Tapia – 2.png"> </div><!-- QUITE LAS FOTOS, POR BUG, PARA COLOCARLAS IR A CSS Y QUITARLE EL POSITION ABSOLUTE -->
+                        <div class="swiper-slide"><img src="img/Noticias – 3.png"></div>
+                        <div class="swiper-slide"><img src="img/Ayudanos - Nicos Tapia – 1.png"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <button id="close">cerrar</button>
+            </div>
+        </div>
+        <div class="modal-container" id="modal_container2">
+            <div class="modal">
+                    <h1>Avenue Fashion Moda</h1> 
+                    <h1>Diseño y Desarrollo web</h1>
+                    <p>Avenue Fashion Moda es una tienda ficticia de ropa donde vende la mejor calidad de productos, con un diseño navegable y portal de cuentas para el carro y pago. En este proyecto se puede navegar la web y simular una compra hasta el momento del carro pago. </p>
+                    <a href="https://github.com/nicosHQ/AvenueFashion" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <!--<a href="https://www.behance.net/gallery/185425653/Proyecto-web-Fundacion-Luchadores-de-Colores" target="_blank"><i class="fa-brands fa-behance"></i></a>-->
+                    <a href="https://avenue-fashion.vercel.app/" target="_blank"><i class="fa-solid fa-rss"></i></a>
+
+                    <!-- Slider main container -->
+                    <div class="swiper swiper-colores">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/Donaciones - Nicos Tapia – 2.png"> </div><!-- QUITE LAS FOTOS, POR BUG, PARA COLOCARLAS IR A CSS Y QUITARLE EL POSITION ABSOLUTE -->
+                        <div class="swiper-slide"><img src="img/Noticias – 3.png"></div>
+                        <div class="swiper-slide"><img src="img/Ayudanos - Nicos Tapia – 1.png"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <button id="close2">cerrar</button>
+            </div>
+        </div>
+        <div class="modal-container" id="modal_container3">
+            <div class="modal">
+                    <h1>Feria de productos organicos</h1> 
+                    <h1>Research UX, Diseño web</h1>
+                    <p>Un proyecto para una feria de productos organicos, donde la problematica principal es la visibilidad y la presencia en internet, para facilitar el marketing de sus prodcutos para distintas "pymes" que participen en esta. </p>
+                    <!--<a href="https://github.com/nicosHQ/AvenueFashion" target="_blank"><i class="fa-brands fa-github"></i></a>-->
+                    <!--<a href="https://www.behance.net/gallery/185425653/Proyecto-web-Fundacion-Luchadores-de-Colores" target="_blank"><i class="fa-brands fa-behance"></i></a>-->
+                    <!--<a href="https://avenue-fashion.vercel.app/" target="_blank"><i class="fa-solid fa-rss"></i></a> -->
+
+                    <!-- Slider main container -->
+                    <div class="swiper swiper-colores">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/Donaciones - Nicos Tapia – 2.png"> </div><!-- QUITE LAS FOTOS, POR BUG, PARA COLOCARLAS IR A CSS Y QUITARLE EL POSITION ABSOLUTE -->
+                        <div class="swiper-slide"><img src="img/Noticias – 3.png"></div>
+                        <div class="swiper-slide"><img src="img/Ayudanos - Nicos Tapia – 1.png"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <button id="close3">cerrar</button>
+            </div>
+        </div>
+        </section>
+        
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="manejo">
+                <!--<div class="programas">
+                    <h3>Programas que manejo</h3> <- ESO IRIA ARRIBA SI DECIDO PONERLO DOUN
+                    <img src="img/icons/photoshop.png">
+                    <img src="img/icons/ilustrador.png">
+                    <img src="img/icons/xd.png">
+                    <img src="img/icons/figma.png">
+                    <img src="img/icons/lightroom.png">
+                    <img src="img/icons/DaVinci_Resolve_Studio.png">
+                </div>-->
+                
+                
+            </div>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Shopify</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress PHP Themes</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Tailwind CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="programas2">
+                    <img class="rotate" src="img/icons/photoshop.png">
+                    <img class="rotate" src="img/icons/ilustrador.png">
+                    <img class="rotate" src="img/icons/xd.png">
+                    <img class="rotate" src="img/icons/figma.png">
+                    <img class="rotate" src="img/icons/lightroom.png">
+                    <img class="rotate" src="img/icons/DaVinci_Resolve_Studio.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingenieria en informatica</h4>
+                        <span class="casa">DUOC UC</span>
+                        <span class="fecha">2019 - 2021</span>
+                        <p>Carrera incompleta, con el pasar de los meses y años me di cuenta que podia desarrollar sin embargo el diseño y el arte es y sera siempre lo mio, En estos años tuve conocimientos de como llevar un proyecto de programacion. con Python y Lua conocimientos en Bases de datos y modelacion de esta en base a desafios con metodologia Cascada y ACBD|CBR</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Cursos Personales</h4>
+                        <span class="casa">Udemy</span>
+                        <span class="fecha">2021 - 2023</span>
+                        <p>Cursando cursos de Udemy en base al diseño constante y evolucion personal, En estos cursos incluyo aprendizaje de Photoshop, Ilustrator, Affter effects, Angular, Figma e incluso Blender3D</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Diseño y desarrollo Web</h4>
+                        <span class="casa">DUOC UC</span>
+                        <span class="fecha">2021 - 2023</span>
+                        <p>Actualmente estoy estudiando Diseño y desarrollo web con metodologia ACBD, durante este tiempo aprendi a dominar Adobe XD y Figma para el diseño UX y UI , y para desarrollar y codificar webs dominamos HTML, CSS y JS incluyendo Jquery y Wordpress (Php - basico) dentro de esta.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Freelance programacion LUA</span>
+                        <span class="fecha">2020 - 2021</span>
+                        <p>Programacion de backend junior, no especialista en configuraciones .lua y .js en Scripts para videojuegos de tipo roleplay en FiveM, con aplicacion a configuraciones basicas y diseños html dentro de este.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Research UX, Diseño UI & Developement</h4>
+                        <span class="casa">Luchadores de Colores</span>
+                        <span class="fecha">2023</span>
+                        <p>Research UX del usuario, generando entrevistas e investigaciones para un publico objetivo y diseñando el sitio enfocado a los usuarios y el arquetipo de usuario habitual, diseño y desarrollo web con Wordpress, incluyendo scripts js y plugins de donacion.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Audiovisual</h4>
+                        <span class="casa">Cover art and Footage</span>
+                        <span class="fecha">2021 - 2024</span>
+                        <p>Trabajo particular sobre cover art y canvas para musica urbana, donde especialice mis habilidades en Photoshop y distintas herramientas de la suite de adobe, tambien participe en sesiones fotograficas y videos musicales como Apoyo directos, editor y camara.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+     <!-- SECCION SOBRE MI -->
+     <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Nicolas Tapia.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Más de mi</h3>
+                    <ul>
+                        <li>
+                            <strong>Nacido en</strong>
+                            03-05-2001
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +569 96180011
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            bynicolastapia@gmail.com
+                        </li>
+                        <!--<li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>-->
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE & Estudiante</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <!--<div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>-->
+            <button class="buttoncv">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.behance.net/nicolastapian1" target="_blank"><i class="fa-brands fa-behance"></i></a>
+            <a href="https://twitter.com/nnnnicosHQ" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://github.com/nicosHQ" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nicolas-tapian/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://bento.me/nicoshq" target="_blank"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+ 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/scroll.js"></script>
+
+</body>
+</html>
